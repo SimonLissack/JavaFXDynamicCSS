@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dynamiccss;
 
 import java.io.File;
@@ -11,9 +5,7 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 /**
@@ -37,7 +29,7 @@ public class DynamicCSS extends Application {
             scene.getStylesheets().clear();
             scene.getStylesheets().add(css);
         });
-        
+
         /**
          * Load CSS from a local file
          */
@@ -69,7 +61,7 @@ public class DynamicCSS extends Application {
         root.setAlignment(Pos.CENTER);
         root.getChildren().stream().forEach(btn->{((Button)btn).setPrefWidth(100);});
         
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("Dynamic CSS");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
